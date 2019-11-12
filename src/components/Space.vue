@@ -4,13 +4,16 @@
     <div class="demo-split">
       <Split v-model="split">
         <div slot="left" class="demo-split-pane">
-          <Input v-model="input" type="textarea" :autosize="{minRows: 30}" placeholder="请输入内容" />
+          <Input v-model="input" type="textarea" class="textarea-input" :autosize="{minRows: 30}" show-word-limit placeholder="请输入内容" />
         </div>
         <div slot="right" class="demo-split-pane">
           <Input
             v-model="output"
+            class="textarea-input"
             type="textarea"
             :autosize="{minRows: 30}"
+            show-word-limit
+            readonly
           />
         </div>
       </Split>
@@ -45,10 +48,21 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .demo-split {
-  height: 660px;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
   border: 1px solid #dcdee2;
+
 }
+
 .demo-split-pane {
   padding: 10px;
+  height: 100%
 }
+.ivu-input-wrapper {
+  height: 100%;
+}
+
 </style>
