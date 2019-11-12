@@ -1,5 +1,4 @@
 # pangu-space
-问什么你们就是不能加个空格呢？
 
 ## Project setup
 ```
