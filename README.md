@@ -1,5 +1,7 @@
 # pangu-space
 
+参考 https://github.com/vinta/pangu.js
+
 ## Project setup
 ```
 yarn install
