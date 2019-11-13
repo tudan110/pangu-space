@@ -2,6 +2,8 @@
 
 参考 https://github.com/vinta/pangu.js
 
+![intro](README.assets/intro.png)
+
 ## Project setup
 ```
 yarn install
